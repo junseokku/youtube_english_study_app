@@ -3,11 +3,11 @@ import { auth, googleProvider } from "common/FirebaseConfig";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { useRecoilState } from "recoil";
+import { useSetRecoilState } from "recoil";
 import { authenticatedUserState } from "recoil/user";
 
 const AuthGoogleButton = () => {
-  const [, setUser] = useRecoilState(authenticatedUserState);
+  const setUser = useSetRecoilState(authenticatedUserState);
   const navigate = useNavigate();
 
   const signInWithGoogle = useCallback(() => {
