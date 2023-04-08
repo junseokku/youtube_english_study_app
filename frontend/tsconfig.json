@@ -3,6 +3,13 @@
     "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "types": ["vite/client", "vite-plugin-svgr/client"],
+    "paths": {
+      "@styles/*": ["./styles/*"],
+      "@apis/*": ["./apis/*"],
+      "@common/*": ["./common/*"],
+      "@store/*": ["./store/*"],
+      "@pages/*": ["./pages/*"]
+    },
     "baseUrl": "src",
     "allowJs": true,
     "skipLibCheck": true,

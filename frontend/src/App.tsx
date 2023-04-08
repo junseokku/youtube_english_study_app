@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LoginPage from "pages/loginpage/LoginPage";
-import MyPage from "pages/mypage/MyPage";
+import LoginPage from "@pages/loginpage/LoginPage";
+import MyPage from "@pages/mypage/MyPage";
 import { RecoilRoot } from "recoil";
 
 export const App = () => {
